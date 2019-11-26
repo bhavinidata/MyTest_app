@@ -23,7 +23,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, and_
 # app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '') or "postgresql+psycopg2://postgres:changeme@localhost:5432/test"
 # app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '')
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://hczvmouktniqbp:5f9dfa1f934f3ddb25c3e144b3cf99f072df39ef44892a8f83e871e13e7b664d@ec2-50-19-95-77.compute-1.amazonaws.com:5432/d8th1nc1jcipjo"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://fnuobabcdkhzxk:8b6a8c76d850a1c4972372e8e087dbbf1fbec76ca5b2ff1e31e3a3f39fe86cf1@ec2-174-129-254-235.compute-1.amazonaws.com:5432/d2plbk9leajbu9"
 print(app.config['SQLALCHEMY_DATABASE_URI'])
 db = SQLAlchemy(app)
 
