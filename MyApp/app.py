@@ -17,10 +17,10 @@ app = Flask(__name__)
 # Database Setup
 #################################################
 
-from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy.ext.automap import automap_base
-from sqlalchemy.orm import Session
-from sqlalchemy import create_engine, and_
+from Flask-SQLAlchemy import SQLAlchemy
+from SQLAlchemy.ext.automap import automap_base
+from SQLAlchemy.orm import Session
+from SQLAlchemy import create_engine, and_
 print("I am here")
 # app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '') or "postgresql+psycopg2://postgres:changeme@localhost:5432/test"
 # app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '')
