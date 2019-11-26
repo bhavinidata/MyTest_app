@@ -23,7 +23,7 @@ cur = conn.cursor()
 
 cur.execute("SELECT * FROM my_test_table;")
 
-print(cur.fetchone())
+print(cur.fetchall())
 
 cur.close()
 
