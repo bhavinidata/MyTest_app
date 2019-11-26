@@ -27,7 +27,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://fnuobabcdkhzxk:8b6a8c76d850a
 print(app.config['SQLALCHEMY_DATABASE_URI'])
 db = SQLAlchemy(app)
 
-from .models import My_data
+#from .models import My_data
 
 # reflect an existing database into a new model
 Base = automap_base()
@@ -48,7 +48,7 @@ def home():
 @app.route("/getnames")
 def getnames():
     print("in getnames")
-    results = db.session.query(TempTableData.myname, TempTableData.myname1).all()
+    results = db.session.query(TempTableData.fname, TempTableData.lname).all()
     print(results)
     myDataResults = []
     for result in results:
