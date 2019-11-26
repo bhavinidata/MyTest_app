@@ -27,7 +27,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://hczvmouktniqbp:5f9dfa1f934f3
 print(app.config['SQLALCHEMY_DATABASE_URI'])
 db = SQLAlchemy(app)
 
-# from .models import Pet
+from .models import My_data
 
 # reflect an existing database into a new model
 Base = automap_base()
